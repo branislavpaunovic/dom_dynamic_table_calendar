@@ -1,0 +1,43 @@
+/* This CSS file defines the visual appearance of the dynamic calendar using modern design choices. 
+It separates weekends (Saturday and Sunday), highlights the current day, 
+and uses a responsive-friendly font (Poppins) for clean presentation. */
+
+#kalendar {
+    background-color: #ededed; /* ✅ Light gray background for the entire calendar table */
+    border: 4px solid #323232; /* ✅ Thick dark border around the entire table */
+    font-family: 'Poppins', sans-serif; /* ✅ Uses the 'Poppins' font (if loaded), with sans-serif as fallback */
+    display: none; /* ✅ Hides the calendar initially – will be shown via JavaScript */
+}
+
+
+#kalendar thead tr th {
+    border: 2px solid #323232; /* ✅ Adds a dark border around each header cell */
+    background-color: #0D5E71; /* ✅ Dark teal background for day headers */
+    font-size: 16px; /* ✅ Medium-sized font for header text */
+    font-weight: 500; /* ✅ Semi-bold weight for better visibility */
+    color: #ededed; /* ✅ Light text color for contrast against dark background */
+    padding: 5px; /* ✅ Padding inside each header cell for spacing */
+}
+
+
+#kalendar tbody tr td {
+    border: 1px dashed #FF6F00; /* ✅ Dashed orange border around each day cell */
+    padding: 5px; /* ✅ Spacing inside each cell */
+    width: 50px; /* ✅ Fixed width to keep calendar grid uniform */
+    text-align: center; /* ✅ Centers the date numbers inside each cell */
+    font-size: 12px; /* ✅ Small font for day numbers */
+}
+
+#kalendar tbody tr td:last-child {
+    background-color: #a9a9a9; /* ✅ Sets background for the last column (Sunday) to dark gray */
+    font-weight: 700; /* ✅ Bold text to highlight Sundays */
+}
+
+#kalendar tbody tr td:nth-child(6) {
+    background-color: #cdcdcd; /* ✅ Sets background for the sixth column (Saturday) to light gray */
+}
+
+#kalendar tbody tr td.current-day {
+    background-color: #FF6F00; /* ✅ Highlights the current day with bright orange background */
+    color: #ededed; /* ✅ Light text color for contrast against the orange background */
+}

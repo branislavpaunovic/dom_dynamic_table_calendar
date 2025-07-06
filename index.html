@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- ✅ Declares the document type and version of HTML (HTML5) to the browser -->
+
+<html dir="ltr" lang="sr"> <!-- ✅ Root element of the HTML document; sets text direction left-to-right and language to Serbian -->
+
+    <head> <!-- ✅ The <head> section contains meta information and external resource links (CSS, JS, etc.) -->
+
+        <meta charset="utf-8"/> <!-- ✅ Specifies the character encoding as UTF-8, supporting Serbian characters -->
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/> <!-- ✅ Sets the viewport for responsive design on mobile devices -->
+
+        <meta content="Bane (NoOneNeo) Paunović" name="author"/> <!-- ✅ Metadata declaring the author of the page -->
+
+        <meta content="JavaScript" name="keywords"/> <!-- ✅ Metadata for keywords, used (less today) by search engines for indexing -->
+
+        <meta content="JavaScript - Example of DOM manipulation and JavaScript logic in a project that uses a pure HTML table to build a calendar." name="description"/> <!-- ✅ Provides a description of the page for SEO and social previews -->
+
+        <meta content="index, follow" name="robots"/> <!-- ✅ Instructs search engine robots to index the page and follow its links -->
+
+        <title>Rad sa tabelama</title> <!-- ✅ Sets the title of the webpage (shown in browser tab and search results) -->
+
+        <script defer="" src="assets/js/main.js"></script> <!-- ✅ Loads the JavaScript file after HTML is parsed; "defer" ensures it runs after DOM is ready -->
+
+        <link href="assets/css/main.css" rel="stylesheet"/> <!-- ✅ Links to the external CSS file for page styling -->
+
+        <link href="assets/pic/logo.png" rel="icon" type="image/x-icon"/> <!-- ✅ Sets the favicon icon shown in browser tabs -->
+
+        <link href="assets/pic/logo.png" rel="apple-touch-icon"/> <!-- ✅ Defines an icon for Apple devices when saving the page to the home screen -->
+
+    </head>
+
+    <body> <!-- ✅ Main content area of the webpage; what the user sees -->
+
+        <table id="kalendar"> <!-- ✅ Creates an HTML table with id "kalendar"; used to structure the calendar layout -->
+
+            <thead> <!-- ✅ Table head section; used to define header rows -->
+
+                <tr> <!-- ✅ Table row element; creates a single row in the table -->
+
+                    <th colspan="7" id="title"></th> <!-- ✅ Table header cell spanning 7 columns; ID used for inserting dynamic month/year title -->
+
+                </tr>
+
+                <tr> <!-- ✅ Another header row for day names -->
+
+                    <th>Pon </th> <!-- ✅ Header cell for Monday (shortened "Ponedeljak") -->
+                    <th>Uto </th> <!-- ✅ Header cell for Tuesday -->
+                    <th>Sre </th> <!-- ✅ Header cell for Wednesday -->
+                    <th>Čet </th> <!-- ✅ Header cell for Thursday -->
+                    <th>Pet </th> <!-- ✅ Header cell for Friday -->
+                    <th>Sub </th> <!-- ✅ Header cell for Saturday -->
+                    <th>Ned </th> <!-- ✅ Header cell for Sunday -->
+
+                </tr>
+
+            </thead>
+
+            <tbody id="dani"> <!-- ✅ Table body where the days will be dynamically injected via JavaScript -->
+
+            </tbody>
+
+        </table>
+
+    </body>
+
+</html> <!-- ✅ Closes the root HTML tag -->
+
+
+
+
+
+
+
+
+
+
